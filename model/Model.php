@@ -26,7 +26,7 @@
 	    public function addBook($title, $author, $description){
 	    	// echo "testing 2";
 
-	        $sql = "INSERT INTO book (title, author, description) VALUES (:title, :author, :description)";
+	        $sql = "INSERT INTO customerdetails (c_name, author, description) VALUES (:title, :author, :description)";
 	        $query = $this->db->prepare($sql);
 	        $parameters = array(':title' => $title, ':author' => $author, ':description' => $description);
 
