@@ -23,12 +23,12 @@
 	        echo "<pre>";print_r($result);echo "</pre>";
 		}
 
-	    public function addBook($title, $author, $description){
+	    public function addBook($c_name, $phone, $email, $h_name){
 	    	// echo "testing 2";
 
-	        $sql = "INSERT INTO customerdetails (c_name, author, description) VALUES (:title, :author, :description)";
+	        $sql = "INSERT INTO customerdetails (c_name, phone, email, h_name) VALUES (:c_name, :phone, :email, :h_name)";
 	        $query = $this->db->prepare($sql);
-	        $parameters = array(':title' => $title, ':author' => $author, ':description' => $description);
+	        $parameters = array(':c_name' => $c_name, ':phone' => $phone, ':email' => $email, ':h_name' => $h_name);
 
 	        
 

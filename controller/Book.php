@@ -23,7 +23,7 @@ class Book extends Controller{
 		 if (isset($_POST['submit_add_book'])) {
 		 	
 
-		 	$this->model->addBook($_POST['book'],$_POST['author'],$_POST['description']);
+		 	$this->model->addBook($_POST['name'],$_POST['phone_number'],$_POST['email'],$_POST['Hotel_Name']);
 
 		 	$var=new View();
 		 	$var->render('bookAdded');
