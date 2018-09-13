@@ -1,4 +1,5 @@
-<h3>Add a Book</h3>
+<h3>Add a Hotel</h3>
+         <?php echo URL; ?>
         <form action="<?php echo URL; ?>Book/addBook" method="POST">
             <label>Name:</label>
             <input type="text" name="name" value="" required />

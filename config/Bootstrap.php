@@ -31,7 +31,7 @@
  				}else{
  					// $controller->index();
  					$this->view=new View();
- 					$this->view->render('Page1');
+ 					$this->view->render('nexus');
  				}
  			}
  			

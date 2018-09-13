@@ -19,7 +19,7 @@ class Book extends Controller{
 
 	function addBook(){
 
-
+		echo "hi";
 		 if (isset($_POST['submit_add_book'])) {
 		 	
 
