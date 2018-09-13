@@ -272,20 +272,20 @@
             </div>
              <div class="container" align="right">
               <h1>Book Hotel</h1>
-              <form action="">
+              <form action="<?php echo URL; ?>Book/addCustomer" method="POST">
                 <label>Your Name:</label>
-                <input type="text" name="" value="name" required /><br>
+                <input type="text" name="name" value="" required /><br>
                 <label>Phone Number:</label>
                 <input type="text" name="phone number" value="" required /><br>
                 <label>Email:</label>
                 <input type="email" name="email" value="" /><br>
                 <label>Hotel Name:</label>
                 <input type="text" name="Hotel Name" value="" /><br>
-                <input type="submit" name="submit_add_book" value="Submit" />
+                <input type="submit" name="submit_add_customer" value="Submit" />
              </form>
             </div>
             <div>
-              <a href="Page1.php">Add Hotel</a>
+              <a href="view/Page3.php">Add Hotel</a>
             </div>
           </div>
         </div>

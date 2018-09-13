@@ -28,7 +28,9 @@
  					# code...
  					$var= $url[1];
  					$controller->$var();
- 				}else{
+ 				}
+ 				
+ 				else{
  					// $controller->index();
  					$this->view=new View();
  					$this->view->render('nexus');

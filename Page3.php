@@ -112,26 +112,21 @@
  <div class="album py-5 bg-light">
         <div class="container">
         	<h1>Add Hotel</h1>
-              <?php
-                $uri = $_SERVER['REQUEST_URI'];
-                //echo $uri;
-                $url = explode('/', $uri);
-                echo $url[1].'/';
-                echo (URL);
-              ?>
-                            
-            <form action="<?php echo(URL)?>Book/addHotel" method="POST">
+            <?php echo URL; ?>
+            <form action="<?php echo URL; ?>Book/addBook" method="POST">
               <label>Name:</label>
               <input type="text" name="name" value="" required />
               <label>Phone_Number:</label>
               <input type="text" name="phone number" value="" required />
               <label>Email:</label>
               <input type="email" name="email" value="" />
-              <label>Address:</label>
-              <input type="text" name="address" value="" />
-              <input type="submit" name="submit_add_hotel" value="Submit" />
+              <label>Hotel_Name:</label>
+              <input type="text" name="Hotel Name" value="" />
+              <input type="submit" name="submit_add_book" value="Submit" />
             </form>
           
         </div>
       </div>
+
+
 </body>
