@@ -270,6 +270,20 @@
                 </div>
               </div>
             </div>
+             <div class="container" align="right">
+              <h1>Book Hotel</h1>
+              <form action="">
+                <label>Your Name:</label>
+                <input type="text" name="" value="name" required /><br>
+                <label>Phone Number:</label>
+                <input type="text" name="phone number" value="" required /><br>
+                <label>Email:</label>
+                <input type="email" name="email" value="" /><br>
+                <label>Hotel Name:</label>
+                <input type="text" name="Hotel Name" value="" /><br>
+                <input type="submit" name="submit_add_book" value="Submit" />
+             </form>
+            </div>
             <div>
               <a href="Page1.php">Add Hotel</a>
             </div>
