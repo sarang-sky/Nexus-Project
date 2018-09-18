@@ -52,7 +52,12 @@
 	.album h1{
 		font-family: Comic sans MS;
 	}
-
+  
+  .footer{
+    background-color: grey;
+    width: 100%
+    height: 130px;
+  }
 </style>
 
 		
@@ -290,7 +295,14 @@
           </div>
         </div>
       </div>
-
+      <footer class="footer">
+        <div class="container">
+          <p><b>Group Members:</b><br>Sarang Ranjitkar<br>Divya J. Ranjit<br>Prabi Sapkota<br>Mohan K.Shrestha</p>
+        </div> 
+        <div>
+          <p><center>Nexus | PHP Project </center></p>
+        </div>     
+      </footer>
 
 
 </body>
