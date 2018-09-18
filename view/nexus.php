@@ -52,6 +52,7 @@
 	.album h1{
 		font-family: Comic sans MS;
 	}
+<<<<<<< HEAD
 
   .footer {
     background-color: grey;
@@ -59,6 +60,14 @@
     width: 100%;
   }
 
+=======
+  
+  .footer{
+    background-color: grey;
+    width: 100%
+    height: 130px;
+  }
+>>>>>>> pr/1
 </style>
 
 		
@@ -72,9 +81,9 @@
     <label>Nexus</label>
   </a>
 
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search Here" aria-label="Search" size="80">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+  <form class="form-inline" method="POST" action="searchResults.php">
+    <input class="form-control mr-sm-2" type="search" name="Search" placeholder="Search Here" aria-label="Search" size="80">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">Search</button>
   </form>
 </nav>
 
@@ -278,20 +287,20 @@
             </div>
              <div class="container" align="right">
               <h1>Book Hotel</h1>
-              <form action="">
+              <form action="<?php echo URL; ?>Book/addCustomer" method="POST">
                 <label>Your Name:</label>
-                <input type="text" name="" value="name" required /><br>
+                <input type="text" name="name" value="" required /><br>
                 <label>Phone Number:</label>
                 <input type="text" name="phone number" value="" required /><br>
                 <label>Email:</label>
                 <input type="email" name="email" value="" /><br>
                 <label>Hotel Name:</label>
                 <input type="text" name="Hotel Name" value="" /><br>
-                <input type="submit" name="submit_add_book" value="Submit" />
+                <input type="submit" name="submit_add_customer" value="Submit" />
              </form>
             </div>
             <div>
-              <a href="Page1.php">Add Hotel</a>
+              <a href="view/Page3.php">Add Hotel</a>
             </div>
           </div>
         </div>
@@ -304,5 +313,9 @@
           <p><center>Nexus | PHP Project </center></p>
         </div>     
       </footer>
+<<<<<<< HEAD
+=======
+
+>>>>>>> pr/1
 
 </body>

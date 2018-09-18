@@ -17,16 +17,15 @@ class Book extends Controller{
 		$this->model->getAllBooks();
 	}
 
-	function addBook(){
+	function addHotel(){
 
-		echo "hi";
-		 if (isset($_POST['submit_add_book'])) {
+		 if (isset($_POST['submit_add_hotel'])) {
 		 	
 
-		 	$this->model->addBook($_POST['name'],$_POST['phone_number'],$_POST['email'],$_POST['Hotel_Name']);
+		 	$this->model->addHotel($_POST['name'],$_POST['phone_number'],$_POST['email'],$_POST['address']);
 
 		 	$var=new View();
-		 	$var->render('bookAdded');
+		 	$var->render('hotelAdded');
 		 	// $var->render('bookAdded');
 		 	
 		 	// echo"<pre>"; print_r($_POST); echo "</pre>";
@@ -42,6 +41,46 @@ class Book extends Controller{
 	else{echo "sorry!";}
 		}
 		
-	}
+	
+	function addCustomer(){
 
- ?>
+		 if (isset($_POST['submit_add_customer'])) {
+		 	
+
+		 	$this->model->addCustomer($_POST['name'],$_POST['phone_number'],$_POST['email'],$_POST['Hotel_Name']);
+
+		 	$var=new View();
+		 	$var->render('customerAdded');
+		 	// $var->render('bookAdded');
+		 	
+		 	// echo"<pre>"; print_r($_POST); echo "</pre>";
+		 	
+			//$book=$_POST['book'];
+			// $author=$_POST['author'];
+			// $description=$_POST['description'];
+			
+			// require('config/view.php');
+			// render('bookAdded');
+
+			}
+	else{echo "sorry!";}
+		}
+
+		function searchResults(){
+
+		 if (isset($_POST['submit'])) {
+		 	
+
+		 	$this->model->searchResults($_POST['Search'],;
+
+		 	$var=new View();
+		 	$var->render('searchResults');
+		 	
+			}
+	else{echo "sorry!";}
+		}
+	
+		
+	}
+ ?>	}
+	}

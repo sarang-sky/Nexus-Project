@@ -2,7 +2,7 @@
 <!Doctype html>
 <html lang="en-US">
 	<head>
-		<title>|Book Hotel|</title>
+		<title>|Home Page|</title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -61,14 +61,14 @@
 		<header class="bg-light ">
 			<div class="container">
 <nav class="navbar navbar-light bg-light navbar-expand-md ">
-  <a class="navbar-brand" href="view/nexus.php">
+  <a class="navbar-brand" href="#">
     <img src="img/logo.png" width="80" height="60" class="d-inline-block align-top" alt="">
     <label>Nexus</label>
   </a>
 
-  <form class="form-inline" method="POST" action="searchResults.php">
-    <input class="form-control mr-sm-2" type="search" name="Search" placeholder="Search Here" aria-label="Search" size="80">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">Search</button>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search Here" aria-label="Search" size="80">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
   </form>
 </nav>
 
@@ -112,30 +112,21 @@
  <div class="album py-5 bg-light">
         <div class="container">
         	<h1>Add Hotel</h1>
-              <?php
-                // $uri = $_SERVER['REQUEST_URI'];
-                // //echo $uri;
-                // $url = explode('/', $uri);
-                // echo $url[1].'/';
-                // echo (URL);
-              // $host_name = $_SERVER['SERVER_NAME'];
-              // echo $host_name;
-              // define(URL, $host_name);
-              // echo (URL);
-              ?>
-                            
-            <form action="<?php echo(URL);?>Book/addHotel" method="POST">
+            <?php echo URL; ?>
+            <form action="<?php echo URL; ?>Book/addBook" method="POST">
               <label>Name:</label>
               <input type="text" name="name" value="" required />
               <label>Phone_Number:</label>
               <input type="text" name="phone number" value="" required />
               <label>Email:</label>
               <input type="email" name="email" value="" />
-              <label>Address:</label>
-              <input type="text" name="address" value="" />
-              <input type="submit" name="submit_add_hotel" value="Submit" />
+              <label>Hotel_Name:</label>
+              <input type="text" name="Hotel Name" value="" />
+              <input type="submit" name="submit_add_book" value="Submit" />
             </form>
           
         </div>
       </div>
+
+
 </body>
