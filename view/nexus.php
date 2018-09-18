@@ -53,6 +53,12 @@
 		font-family: Comic sans MS;
 	}
 
+  .footer {
+    background-color: grey;
+    height: 140px;
+    width: 100%;
+  }
+
 </style>
 
 		
@@ -290,6 +296,13 @@
           </div>
         </div>
       </div>
-
+      <footer class="footer">
+        <div class="container">
+          <p><b>Group Members:</b><br>Sarang Ranjitkar<br>Divya J. Ranjit<br>Prabi Sapkota<br>Mohan K.Shrestha</p>
+        </div> 
+        <div>
+          <p><center>Nexus | PHP Project </center></p>
+        </div>     
+      </footer>
 
 </body>
