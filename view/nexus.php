@@ -66,9 +66,9 @@
     <label>Nexus</label>
   </a>
 
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search Here" aria-label="Search" size="80">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
+  <form class="form-inline" method="POST" action="searchResults.php">
+    <input class="form-control mr-sm-2" type="search" name="Search" placeholder="Search Here" aria-label="Search" size="80">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" name="submit">Search</button>
   </form>
 </nav>
 
@@ -290,6 +290,7 @@
           </div>
         </div>
       </div>
+
 
 
 </body>

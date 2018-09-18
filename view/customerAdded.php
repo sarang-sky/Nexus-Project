@@ -4,7 +4,7 @@
 <body>
 
 <?php 
-		echo "<h2>You have successfully added:</h2><hr>";
+		echo "<h2>You have successfully Booked a Room:</h2><hr>";
 		echo "Customer Name:".$_POST['name']."<hr>";
 		echo "Phone:".$_POST['phone_number']."<hr>";
 		echo "Email:".$_POST['email']."<hr>";

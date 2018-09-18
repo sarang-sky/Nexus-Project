@@ -6,7 +6,7 @@ class Index{
 	}
 
 	public function index(){
-		$this->view->render('nexus');
+		$this->view->render('Page3');
 	}
 }
 

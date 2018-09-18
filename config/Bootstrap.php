@@ -33,7 +33,7 @@
  				else{
  					// $controller->index();
  					$this->view=new View();
- 					$this->view->render('nexus');
+ 					$this->view->render('Page3');
  				}
  			}
  			

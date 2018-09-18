@@ -65,6 +65,22 @@ class Book extends Controller{
 			}
 	else{echo "sorry!";}
 		}
+
+		function searchResults(){
+
+		 if (isset($_POST['submit'])) {
+		 	
+
+		 	$this->model->searchResults($_POST['Search'],;
+
+		 	$var=new View();
+		 	$var->render('searchResults');
+		 	
+			}
+	else{echo "sorry!";}
+		}
+	
 		
 	}
- ?>
+ ?>	}
+	}

@@ -23,12 +23,12 @@
 	 //        echo "<pre>";print_r($result);echo "</pre>";
 		// }
 
-	    public function addBook($c_name, $phone, $email, $h_name){
+	    public function addHotel($name, $phone, $email, $address){
 	    	// echo "testing 2";
 
-	        $sql = "INSERT INTO hoteldetails (name, phone, email, h_name) VALUES (:name, :phone, :email, :h_name)";
+	        $sql = "INSERT INTO hoteldetails (name, phone, email, address) VALUES (:name, :phone, :email, :address)";
 	        $query = $this->db->prepare($sql);
-	        $parameters = array(':name' => $c_name, ':phone' => $phone, ':email' => $email, ':address' => $h_name);
+	        $parameters = array(':name' => $name, ':phone' => $phone, ':email' => $email, ':address' => $address);
 
 	        
 
@@ -49,6 +49,27 @@
 
 	        
 	    }
+
+	 	public function searchResults($Search){
+			if(!isset($_POST['Search'])){
+				header("Location:index.php");
+			}
+			$search_sql = "SELECT * FROM customerDetails WHERE name LIKE '%".$_POST['search']."%'" ;
+			$search_query=$this->db->query($search_sql);
+			
+			
+			// if($search_query->num_rows>0){
+			// 	//output data of each row
+			// 	while($row= $search_query->fetch_assoc()){
+
+				// }
+			}
+
+			// if(mysql_num_rows($search_query!=0)){
+			// 	$search_rs=mysql_fetch_assoc($search_query);
+			// }
+
+		}	
 	    
 
 }
