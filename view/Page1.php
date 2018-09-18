@@ -1,6 +1,11 @@
 <h3>Add a Hotel</h3>
-         <?php echo URL; ?>
-        <form action="<?php echo URL; ?>Book/addBook" method="POST">
+         <?php 
+         $host_name = $_SERVER['SERVER_NAME'];
+              echo $host_name;
+              define(URL, $host_name);
+              echo (URL);
+            ?>
+        <form action="<?php echo URL; ?>Week4/controller/Book/addCustomer" method="POST">
             <label>Name:</label>
             <input type="text" name="name" value="" required />
             <label>Phone_Number:</label>
